@@ -3,7 +3,7 @@ import { challengesContext } from '../contexts/ChallengesContext';
 import styles from '../styles/Components/LevelUpModal.module.css';
 
 export function LevelUpModal () {
-    const {level, closeLevelUpModal } = useContext(challengesContext)
+    const {level } = useContext(challengesContext)
 
     return (
         <div className={styles.overlay}>
@@ -15,7 +15,7 @@ export function LevelUpModal () {
 
                 <button 
                 type="button"
-                onClick={closeLevelUpModal}>
+                >
                     <img src='/icons/close.svg' alt="Fechar modal" />
                 </button>
 
